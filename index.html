@@ -14,18 +14,23 @@
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <title>Responsive Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+    <title>Vishal Shingare</title>
   </head>
   <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo">Vishal</a>
+        <a href="#" class="nav__logo">Vishal Shingare</a>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
             <li class="nav__item">
-              <a href="#home" class="nav__link"
+              <a href="#home" class="nav__link active-link"
                 ><i class="uil uil-estate nav__icon"></i> Home</a
               >
             </li>
@@ -39,25 +44,22 @@
                 ><i class="uil uil-file-alt nav__icon"></i> Skills</a
               >
             </li>
-            <!-- <li class="nav__item">
-              <a href="#services" class="nav__link"
-                ><i class="uil uil-briefcase-alt nav__icon"></i> Services</a
-              >
-            </li> -->
             <li class="nav__item">
               <a href="#portfolio" class="nav__link"
-                ><i class="uil uil-scenery nav__icon"></i> Portfolio</a
+                ><i class="uil uil-scenery nav__icon"></i> Projects</a
               >
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link"
-                ><i class="uil uil-scenery nav__icon"></i> Contactme</a
+                ><i class="uil uil-scenery nav__icon"></i> Contact</a
               >
             </li>
           </ul>
           <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
         <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
           <div class="nav__toggle" id="nav-toggle">
             <i class="uil uil-apps"></i>
           </div>
@@ -76,19 +78,24 @@
                 href="https://www.linkedin.com/in/vishal-shingare/"
                 target="_blank"
                 class="home__social-icon"
-                ><i class="uil uil-linkedin"></i></i></i
+                ><i class="uil uil-linkedin-alt"></i
               ></a>
               <a
                 href="https://github.com/vishal-shingare"
                 target="_blank"
                 class="home__social-icon"
-                ><i class="uil uil-github"></i></i
+                ><i class="uil uil-github-alt"></i
               ></a>
-              <a href="" target="_blank" class="home__social-icon"
-                ><i class="uil uil-twitter"></i></a>
+              <a
+                href="https://twitter.com/visha_shingare/"
+                target="_blank"
+                class="home__social-icon"
+                ><i class="uil uil-twitter-alt"></i
+              ></a>
             </div>
             <div class="home__img">
-              <svg class="home__blob"
+              <svg
+                class="home__blob"
                 viewBox="0 0 200 187"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -108,14 +115,22 @@
                   129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                   -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
                   />
-                  <image class="home__blob-img" x="12" y="18" href="assets/img/vs-profile.png" />
+                  <image
+                    class="home__blob-img"
+                    x="12"
+                    y="18"
+                    href="assets/img/vs-profile.png"
+                  />
                 </g>
               </svg>
             </div>
             <div class="home__data">
-              <h1 class="home__title">Hi, I'am Vishal</h1> 
+              <h1 class="home__title">Hi, I'am Vishal</h1>
               <h3 class="home__subtitle">Sr. Software Developer</h3>
-              <p class="home__description">I am a passionate Full-Stack Developer with in-depth experience in Reactjs and .Net Core.</p>
+              <p class="home__description">
+                I am a passionate Full-Stack Developer with in-depth experience
+                in Reactjs and .Net Core.
+              </p>
               <a href="#contact" class="button button--flex">
                 Contact Me <i class="uil uil-message button__icon"></i>
               </a>
@@ -138,26 +153,43 @@
         <div class="about__container container grid">
           <!-- <img src="assets/img/vs-profile.png" alt="" class="about__img"> -->
           <div class="about__data">
-            <p class="about__description">Web Developer, with extensive knowledge and 4 years of experience, working in React and .Net Core Eco-system.</p>
-          <div class="about__info">
-            <div>
-              <span class="about__info-title">04</span>
-              <span class="about__info-name">Years <br> experience</span>
+            <p class="about__description">
+              A Web developer, with extensive knowledge and industrial
+              experience in developing scalable and beautiful products with
+              React and .Net Core.
+            </p>
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">04</span>
+                <span class="about__info-name"
+                  >Years <br />
+                  experience</span
+                >
+              </div>
+              <div>
+                <span class="about__info-title">06+</span>
+                <span class="about__info-name"
+                  >Completed <br />
+                  projects</span
+                >
+              </div>
+              <div>
+                <span class="about__info-title">02</span>
+                <span class="about__info-name"
+                  >Companies <br />
+                  worked</span
+                >
+              </div>
             </div>
-            <div>
-              <span class="about__info-title">06+</span>
-              <span class="about__info-name">Completed <br> projects</span>
+            <div class="about__buttons">
+              <a
+                download=""
+                href="assets/pdf/Vishal-Shingare-Resume.pdf"
+                class="button button--flex"
+              >
+                Download Resume<i class="uil uil-download-alt button__icon"></i>
+              </a>
             </div>
-            <div>
-              <span class="about__info-title">02</span>
-              <span class="about__info-name">Companies <br> worked</span>
-            </div>
-          </div>
-          <div class="about__buttons">
-            <a download="" href="assets/pdf/Vishal-Shingare-Resume.pdf" class="button button--flex">
-              Download Resume<i class="uil uil-download-alt button__icon"></i>
-            </a>
-          </div>
           </div>
         </div>
       </section>
@@ -272,129 +304,147 @@
 
       <!--==================== QUALIFICATION ====================-->
       <section class="qualification section">
-          <h2 class="section__title">Qualification</h2>
-          <span class="section__subtitle">My personal journey</span>
-          <div class="qualification__container container">
-            <div class="qualification__tabs">
-              <div class="qualification__button button--flex qualification__active" data-target="#education">
-                <i class="uil uil-graduation-cap qualification__icon"></i>
-                Education
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My personal journey</span>
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </div>
+            <div class="qualification__button button--flex" data-target="#work">
+              <i class="uil uil-briefcase-alt qualification__icon"></i>
+              Work
+            </div>
+          </div>
+          <div class="qualification__sections">
+            <!--==================== QUALIFICATION CONTENT 1 ====================-->
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">PG-DAC</h3>
+                  <span class="qualification__subtitle"
+                    >Sunbeam Institute, Pune</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2013 - 2017
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
               </div>
-              <div class="qualification__button button--flex" data-target="#work">
-                <i class="uil uil-briefcase-alt qualification__icon"></i>
-                Work
+              <!--==================== QUALIFICATION 2 ====================-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">E&TC Engineer</h3>
+                  <span class="qualification__subtitle">
+                    RIT, Shivaji University</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2013 - 2017
+                  </div>
+                </div>
+              </div>
+              <!--==================== QUALIFICATION 3 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">HSC</h3>
+                  <span class="qualification__subtitle">
+                    A.K.Jr College, Kolhapur Board(MH)</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2012 - 2013
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!-- <span class="qualification__line"></span> -->
+                </div>
               </div>
             </div>
-            <div class="qualification__sections">
-              <!--==================== QUALIFICATION CONTENT 1 ====================-->
-                <div class="qualification__content qualification__active" data-content id="education">
-                  <!--==================== QUALIFICATION 1 ====================-->
-                  <div class="qualification__data">
-                    <div>
-                      <h3 class="qualification__title">PG-DAC</h3>
-                      <span class="qualification__subtitle">Sunbeam Institute, Pune</span>
-                      <div class="qualification__calendar">
-                        <i class="uil uil-calendar-alt"></i>
-                        2013 - 2017
-                      </div>
-                    </div>
-                    <div>
-                      <span class="qualification__rounder"></span>
-                      <span class="qualification__line"></span>
-                    </div>
-                  </div>
-                  <!--==================== QUALIFICATION 2 ====================-->
-                  <div class="qualification__data">
-                    <div></div>
 
-                    <div>
-                      <span class="qualification__rounder"></span>
-                      <span class="qualification__line"></span>
-                    </div>
-
-                    <div>
-                      <h3 class="qualification__title">E&TC Engineer</h3>
-                      <span class="qualification__subtitle"> RIT, Shivaji University</span>
-                      <div class="qualification__calendar">
-                        <i class="uil uil-calendar-alt"></i>
-                        2013 - 2017
-                      </div>
-                    </div>
-                  </div>
-                  <!--==================== QUALIFICATION 3 ====================-->
-                  <div class="qualification__data">
-                    <div>
-                      <h3 class="qualification__title">HSC</h3>
-                      <span class="qualification__subtitle"> A.K.Jr College, Kolhapur Board(MH)</span>
-                      <div class="qualification__calendar">
-                        <i class="uil uil-calendar-alt"></i>
-                        2012 - 2013
-                      </div>
-                    </div>
-                    <div>
-                      <span class="qualification__rounder"></span>
-                      <!-- <span class="qualification__line"></span> -->
-                    </div>
+            <!--==================== QUALIFICATION CONTENT 2 ====================-->
+            <div class="qualification__content" data-content id="work">
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Sr.Software Engineer</h3>
+                  <span class="qualification__subtitle"
+                    >HCL Technologies, Pune</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021 - Present
                   </div>
                 </div>
-
-              <!--==================== QUALIFICATION CONTENT 2 ====================-->
-                <div class="qualification__content" data-content id="work">
-                <!--==================== QUALIFICATION 1 ====================-->
-                <div class="qualification__data">
-                  <div>
-                    <h3 class="qualification__title">Sr.Software Engineer</h3>
-                    <span class="qualification__subtitle">HCL Technologies, Pune</span>
-                    <div class="qualification__calendar">
-                      <i class="uil uil-calendar-alt"></i>
-                      2021 - Present
-                    </div>
-                  </div>
-                  <div>
-                    <span class="qualification__rounder"></span>
-                    <span class="qualification__line"></span>
-                  </div>
-                </div>
-                <!--==================== QUALIFICATION 2 ====================-->
-                <div class="qualification__data">
-                  <div></div>
-
-                  <div>
-                    <span class="qualification__rounder"></span>
-                    <span class="qualification__line"></span>
-                  </div>
-
-                  <div>
-                    <h3 class="qualification__title">Software Engineer I</h3>
-                    <span class="qualification__subtitle"> Bentley Systems, Pune</span>
-                    <div class="qualification__calendar">
-                      <i class="uil uil-calendar-alt"></i>
-                      2020 - 2021
-                    </div>
-                  </div>
-                </div>
-                <!--==================== QUALIFICATION 3 ====================-->
-                <div class="qualification__data">
-                  <div>
-                    <h3 class="qualification__title">Associate Software Engineer</h3>
-                    <span class="qualification__subtitle">Bentley Systems, Pune</span>
-                    <div class="qualification__calendar">
-                      <i class="uil uil-calendar-alt"></i>
-                      2018 - 2020
-                    </div>
-                  </div>
-                  <div>
-                    <span class="qualification__rounder"></span>
-                    <!-- <span class="qualification__line"></span> -->
-                  </div>
-                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
                 </div>
               </div>
-          </div>
-      </section>
+              <!--==================== QUALIFICATION 2 ====================-->
+              <div class="qualification__data">
+                <div></div>
 
-      <!--==================== SERVICES ====================-->
-      <!-- <section class="services section" id="services"></section> -->
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Software Engineer I</h3>
+                  <span class="qualification__subtitle">
+                    Bentley Systems, Pune</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020 - 2021
+                  </div>
+                </div>
+              </div>
+              <!--==================== QUALIFICATION 3 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    Associate Software Engineer
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >Bentley Systems, Pune</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2018 - 2020
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!-- <span class="qualification__line"></span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!--==================== PORTFOLIO ====================-->
       <section class="portfolio section" id="portfolio">
@@ -405,11 +455,21 @@
           <div class="swiper-wrapper">
             <!--==================== PORTFOLIO 1 ====================-->
             <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/audiobooks.jpg" alt="" class="portfolio__img">
+              <img
+                src="assets/img/audiobooks.jpg"
+                alt=""
+                class="portfolio__img"
+              />
               <div class="portfolio__data">
                 <h3 class="portfolio__title">Audiobooks</h3>
-                <p class="portfolio__description">An Audible like platform built with Next.js, Tailwind and ThirdWeb.</p>
-                <a href="https://thirdweb-hackathon-ui.vercel.app/" class="button button--flex button--small portfolio__button">
+                <p class="portfolio__description">
+                  An Audible like platform built with Next.js, Tailwind and
+                  ThirdWeb.
+                </p>
+                <a
+                  href="https://thirdweb-hackathon-ui.vercel.app/"
+                  class="button button--flex button--small portfolio__button"
+                >
                   Demo
                   <i class="uil uil-arrow-right button__icon"></i>
                 </a>
@@ -418,11 +478,21 @@
 
             <!--==================== PORTFOLIO 2 ====================-->
             <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/crwn-clothing.jpg" alt="" class="portfolio__img">
+              <img
+                src="assets/img/crwn-clothing.jpg"
+                alt=""
+                class="portfolio__img"
+              />
               <div class="portfolio__data">
                 <h3 class="portfolio__title">Crown Clothing E-Commerce</h3>
-                <p class="portfolio__description">A React course project which encompasses a lot of react specific best practices.</p>
-                <a href="https://cwrn-vs-live.herokuapp.com/" class="button button--flex button--small portfolio__button">
+                <p class="portfolio__description">
+                  A React course project which encompasses a lot of react
+                  specific best practices.
+                </p>
+                <a
+                  href="https://cwrn-vs-live.herokuapp.com/"
+                  class="button button--flex button--small portfolio__button"
+                >
                   Demo
                   <i class="uil uil-arrow-right button__icon"></i>
                 </a>
@@ -431,11 +501,20 @@
 
             <!--==================== PORTFOLIO 3 ====================-->
             <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/web-design.jpg" alt="" class="portfolio__img">
+              <img
+                src="assets/img/web-design.jpg"
+                alt=""
+                class="portfolio__img"
+              />
               <div class="portfolio__data">
                 <h3 class="portfolio__title">Web Design Project</h3>
-                <p class="portfolio__description">Sample web design project using css.</p>
-                <a href="https://vishal-shingare.github.io/web-design-project/" class="button button--flex button--small portfolio__button">
+                <p class="portfolio__description">
+                  Sample web design project using css.
+                </p>
+                <a
+                  href="https://vishal-shingare.github.io/web-design-project/"
+                  class="button button--flex button--small portfolio__button"
+                >
                   Demo
                   <i class="uil uil-arrow-right button__icon"></i>
                 </a>
@@ -454,12 +533,6 @@
         </div>
       </section>
 
-      <!--==================== PROJECT IN MIND ====================-->
-      <!-- <section class="project section"></section> -->
-
-      <!--==================== TESTIMONIAL ====================-->
-      <!-- <section class="testimonial section"></section> -->
-
       <!--==================== CONTACT ME ====================-->
       <section class="contact section" id="contact">
         <h2 class="section__title">Contact Me</h2>
@@ -472,32 +545,40 @@
 
               <div>
                 <h3 class="contact__title">Email</h3>
-                <span class="contact__subtitle">vishalshingare29@gmail.com</span>
+                <span class="contact__subtitle"
+                  >vishalshingare29@gmail.com</span
+                >
               </div>
+            </div>
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
 
-              <div class="contact__information">
-                <i class="uil uil-map-marker contact__icon"></i>
-
-                <div>
-                  <h3 class="contact__title">Location</h3>
-                  <span class="contact__subtitle">Pune(MH), India</span>
-                </div>
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle">Pune(MH), India</span>
+              </div>
             </div>
           </div>
           <form action="" class="contact__form grid">
             <div class="contact__inputs grid">
               <div class="contact__content">
                 <label for="" class="contact__label">Name</label>
-                <input type="text" class="contact__input">
+                <input type="text" class="contact__input" />
               </div>
             </div>
             <div class="contact__content">
               <label for="" class="contact__label">Email</label>
-              <input type="text" class="contact__input">
+              <input type="text" class="contact__input" />
             </div>
             <div class="contact__content">
               <label for="" class="contact__label">Message</label>
-              <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+              <textarea
+                name=""
+                id=""
+                cols="0"
+                rows="7"
+                class="contact__input"
+              ></textarea>
             </div>
             <div>
               <a href="#" class="button button--flex">
@@ -511,10 +592,53 @@
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title nav__logo">Vishal Shingare</h1>
+            <span class="footer__subtitle">Sr. Software Developer</span>
+          </div>
+          <ul class="footer__links">
+            <li>
+              <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer__link">Contactme</a>
+            </li>
+          </ul>
+          <div class="footer__socials">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-facebook-f"></i>
+            </a>
+            <a
+              href=" https://www.instagram.com/"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-instagram"></i>
+            </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-twitter-alt"></i>
+            </a>
+          </div>
+        </div>
+        <p class="footer__copy">&#169; Vishal, All right reserved</p>
+      </div>
+    </footer>
 
     <!--==================== SCROLL TOP ====================-->
-
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
 
