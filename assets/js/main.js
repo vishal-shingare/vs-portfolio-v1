@@ -71,8 +71,6 @@ tabs.forEach((tab) => {
   });
 });
 
-/*==================== SERVICES MODAL ====================*/
-
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiper = new Swiper('.portfolio__container', {
   cssMode: true,
@@ -86,7 +84,6 @@ let swiper = new Swiper('.portfolio__container', {
     clickable: true,
   },
 });
-/*==================== TESTIMONIAL ====================*/
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
